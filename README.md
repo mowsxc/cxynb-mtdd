@@ -2,6 +2,8 @@
 
 **美团商家后台订单自动抓取、对账、计费系统。纯 Rust 后端 + 原生 JS 前端，单 EXE 运行。**
 
+仓库：https://github.com/mowsxc/cxynb-mtdd （原仓库名 `cxynb`，2026-09-30 改名，旧地址会自动跳转）
+
 ## 核心特性
 
 - **智能双轨同步** — 快速同步（15分钟窗口，~1秒）+ 深度同步（50小时窗口，~2秒）
@@ -178,4 +180,7 @@ node --check <(python -c "import re;print(re.findall(r'<script>(.*?)</script>',o
 2. 前端列显示逻辑改动后，必须验证 PC 默认 10 列、财务价隐藏
 3. 新增 API 字段时，确认是否属于 UI 偏好（不应存后端）
 4. 修改 `COLUMNS` 后运行自检：浏览器 Console 应输出 `[自检] 列显示: 10/11 列可见`
-# cxynb
+
+## 仓库
+
+`cxynb-mtdd` — 美团订单抓取、计费与对账模块，供收银台（SmartICafe）调用与参考。
